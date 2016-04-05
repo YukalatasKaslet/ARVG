@@ -22,7 +22,8 @@ def word_pig_latin(word)
 	end
 end
 
-x = ARGV.map(&:dup)
+x = ARGV.map(&:dup) #Crea un duplicado de cada elemento del ARGV
+                    #Los elementos del ARGV no pueden ser modificados(cte) <frozen>
 #Equivalente
 # x = ARGV.inspect
 # x = x.split("\"")
